@@ -33,7 +33,7 @@
   "scripts": {
     "build": "npm run build:ts && npm run analyze && npm run api",
     "build:ts": "tsc",
-    "analyze": "lit gen labs gen --manifest",
+    "analyze": "lit labs gen --manifest --out .",
     "api": "wca src/lib/chessboard-element.ts -f json2 --outFile docs-src/_data/docs.json --inlineTypes",
     "format": "prettier src/lib/* --write",
     "lint": "eslint src/lib/*.ts",
